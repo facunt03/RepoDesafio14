@@ -8,6 +8,7 @@ public class MovJug : MonoBehaviour
     public float speed = 2f;
     public float rotateSpeed = 2f;
     
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class MovJug : MonoBehaviour
 
         float hor = Input.GetAxis("Horizontal");
         transform.Rotate(new Vector3(0, hor, 0) * rotateSpeed * Time.deltaTime);
+        
     }
     
     
